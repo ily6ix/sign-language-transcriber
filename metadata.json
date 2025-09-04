@@ -1,0 +1,7 @@
+{
+  "name": "Sign Language Transcriber",
+  "description": "A real-time sign language transcriber that uses your device's camera and AI to interpret and display hand gestures as text.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}

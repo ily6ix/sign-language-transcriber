@@ -1,0 +1,7 @@
+
+export enum AppStatus {
+  IDLE = 'IDLE',
+  STARTING_CAMERA = 'STARTING_CAMERA',
+  TRANSCRIBING = 'TRANSCRIBING',
+  ERROR = 'ERROR',
+}
