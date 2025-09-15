@@ -1,20 +1,23 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Sign Language Transcriber
 
-# Run and deploy your AI Studio app
+The **Sign Language Transcriber** is an assistive technology system that converts **American Sign Language (ASL)** gestures into **text (and optionally speech)**. It aims to bridge communication between Deaf/hard-of-hearing individuals and non-signers.
 
-This contains everything you need to run your app locally.
+---
 
-View your app in AI Studio: https://ai.studio/apps/drive/13lqxuFEPRC47FeHftb8A92l6T3bK5JRM
+## 📖 Overview
 
-## Run Locally
+- **Input:** User signs in front of a camera (webcam or video file).
+- **Processing:** Frames are passed through **MediaPipe** to extract hand/pose landmarks.
+- **Recognition:** A trained **neural network model** interprets landmark sequences and predicts corresponding words/letters.
+- **Output:** Recognized text is displayed, and optionally read aloud using text-to-speech.
 
-**Prerequisites:**  Node.js
+This project follows a standard workflow: **Video Input → Landmark Extraction → Model Inference → Text/Speech Output**.
 
+---
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## ⚙️ Installation & Setup
+
+1. **Clone the repo**
+   ```bash
+   git clone https://github.com/ily6ix/sign-language-transcriber.git
+   cd sign-language-transcriber
